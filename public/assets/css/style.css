@@ -1,0 +1,102 @@
+body {
+	background-color: hsla(210, 50%, 50%);
+	color: hsl(0, 0%, 96%);
+	font-family: "Comic Sans MS";
+	font-size: calc(16px + (21 - 16) * (100vw - 412px) / (1920 - 412));
+	display: grid;
+	grid-template-rows: minmax(2em, 10vh) 85vh 5vh;
+	margin: 0;
+}
+
+.siteBrand {
+	text-decoration: none;
+	color: hsl(0, 0%, 96%);
+	font-size: 200%;
+}
+
+.siteBrand__logo {
+	width: 60px;
+	height: auto;
+}
+
+.mainChatView {
+	height: 100%;
+	background-color: hsl(0, 0%, 96%);
+	overflow-y: scroll;
+	color: hsl(0, 0%, 6%);
+	padding: 0.4em 1em;
+	box-sizing: border-box;
+}
+
+.mainChatView__me,
+.mainChatView__other {
+	border-radius: 8px;
+	padding: .4em 1em;
+}
+
+.mainChatView__me {
+	text-align: right;
+	background-color: lightblue;
+	border-bottom-right-radius: 0;
+}
+
+.mainChatView__other {
+	text-align: left;
+	background-color: lightgray;
+	border-top-left-radius: 0;
+}
+
+.mainChatView__name {
+	display: block;
+	font-size: 50%;
+}
+
+.chatMessage {
+	display: flex;
+	align-items: center;
+}
+
+.chatMessage__input,
+.chatMessage__button {
+	font-family: inherit;
+	font-size: inherit;
+	padding: .3em .7em;
+}
+
+.chatMessage__input {
+	flex: 4;
+}
+
+.chatMessage__button {
+	flex: 1;
+	background-color: hsl(120, 50%, 30%);
+	color: hsl(0, 0%, 96%);
+	border: none;
+}
+
+.emoticon{
+	height: 1.4em;
+	width: auto;
+}
+
+.timestamp{
+	color: brown;
+	display: block;
+}
+.timestamp.right{
+	text-align: right;
+
+}
+
+.timestamp.left{
+	text-align: left;
+
+}
+.hidden{
+	display: none !important;
+	visibility: none !important;
+	width: 1px;
+	height: 1px;
+	pointer-events: none;
+}
+

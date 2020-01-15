@@ -1,0 +1,32 @@
+{
+  "name": "chatterbox",
+  "version": "0.1.0",
+  "description": "A simple socket.io chat app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rts-cmk/chatterbox.git"
+  },
+  "keywords": [
+    "socketio",
+    "express",
+    "chat"
+  ],
+  "author": "Brian Emilius <be@rts.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rts-cmk/chatterbox/issues"
+  },
+  "homepage": "https://github.com/rts-cmk/chatterbox#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
